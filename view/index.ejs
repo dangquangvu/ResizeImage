@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        .bg-img {
+            background: skyblue;
+            background-size: cover;
+            padding-top: 90px;
+            padding-bottom: 133px;
+            text-align: center;
+        }
+        
+        @media (max-width: 767px) {
+            .bg-img {
+                padding-top: 70px;
+                padding-bottom: 80px;
+            }
+        }
+        
+        input[type=file] {
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="bg-img well-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-2 col-sm-8" style="display:inline">
+                    <input type='file' onchange="readURL(this);" accept="image/*,.pdf" />
+                    <!-- <img id="blah" src="http://placehold.it/180" alt="your image" /> -->
+                    <canvas id="canvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="/indexView.js"></script>
+
+</html>
